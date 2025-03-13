@@ -1,8 +1,11 @@
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State private var coinSide: String = "heads"
     @State private var spinDegrees: Double = 0
+    // keep a reference so the player doesn’t get deallocated instantly
+    @State private var audioPlayer: AVAudioPlayer?
 
     var body: some View {
         ZStack {
@@ -30,9 +33,25 @@ struct ContentView: View {
     }
 
     func flipCoin() {
+        playSound()
         spinDegrees += 360
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             coinSide = Bool.random() ? "heads" : "tails"
+        }
+    }
+    
+    func playSound() {
+        // find your audio file in the bundle
+        guard let path = Bundle.main.path(forResource: "coinflip", ofType: "wav") else { return }
+
+        
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("could not play sound: \(error.localizedDescription)")
         }
     }
 }

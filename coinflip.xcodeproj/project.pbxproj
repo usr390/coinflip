@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7D498672D826B43007DC1D7 /* coinflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = B7D498662D826B43007DC1D7 /* coinflip.wav */; };
 		B7E60F502D4C07A000F46767 /* coinflipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E60F4F2D4C07A000F46767 /* coinflipApp.swift */; };
 		B7E60F522D4C07A000F46767 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E60F512D4C07A000F46767 /* ContentView.swift */; };
 		B7E60F542D4C07A300F46767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E60F532D4C07A300F46767 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B7D498662D826B43007DC1D7 /* coinflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coinflip.wav; sourceTree = "<group>"; };
 		B7E60F4C2D4C07A000F46767 /* coinflip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coinflip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E60F4F2D4C07A000F46767 /* coinflipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinflipApp.swift; sourceTree = "<group>"; };
 		B7E60F512D4C07A000F46767 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		B7E60F432D4C07A000F46767 = {
 			isa = PBXGroup;
 			children = (
+				B7D498662D826B43007DC1D7 /* coinflip.wav */,
 				B7E60F4E2D4C07A000F46767 /* coinflip */,
 				B7E60F5F2D4C07A300F46767 /* coinflipTests */,
 				B7E60F692D4C07A300F46767 /* coinflipUITests */,
@@ -233,6 +236,7 @@
 			files = (
 				B7E60F572D4C07A300F46767 /* Preview Assets.xcassets in Resources */,
 				B7E60F542D4C07A300F46767 /* Assets.xcassets in Resources */,
+				B7D498672D826B43007DC1D7 /* coinflip.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"coinflip/Preview Content\"";
 				DEVELOPMENT_TEAM = 9S77TZUXU6;
 				ENABLE_PREVIEWS = YES;
@@ -434,7 +438,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = saltyairsystems.coinflip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -449,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"coinflip/Preview Content\"";
 				DEVELOPMENT_TEAM = 9S77TZUXU6;
 				ENABLE_PREVIEWS = YES;
@@ -463,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = saltyairsystems.coinflip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
